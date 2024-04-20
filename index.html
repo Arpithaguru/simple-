@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plain Web Page1</title>
+<style>
+    body, html {
+        margin: 150;
+        padding: 100;
+        height: 100%;
+        position: relative; /* Added relative positioning */
+    }
+     .menu {
+            list-style-type: none;
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            background-color: hsl(342, 98%, 52%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            line-height: 24.4pt;
+            justify-items: center;
+        }
+        .menu li {
+            flex-grow: 1;
+            text-align: center;
+            white-space: nowrap;
+            margin: 0 5px;
+        }
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 0px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    span {
+            color: black;
+        }
+    .menu .icon-img{
+        width: 20px;
+        height: 20px;
+    }
+    .main-container{
+        height: calc(100%-50px);
+       overflow-y:auto ;
+       background: linear-gradient(89deg, rgba(255, 243, 176, 1) 0%, rgba(255, 181, 237, 1) 100%);
+    }
+    .container,.image-container {
+        display: flex;
+        flex-direction:row;
+    }
+    .left-container{
+        width: 80%;
+        margin: auto;
+        display:flex ;
+        justify-content: center;
+        font-style: calc(Calibri);
+        flex-direction: column;
+        row-gap: 20px;
+        height: 100%;
+    }
+    .left-section {
+        width: 50%;
+        height: 800px;
+    }
+    .right-section {
+        width: 50%;
+        height: 800px;
+    }
+    .right-section img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .heading {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 60px;
+    margin: 0px;
+    }
+    .description {
+        font-size: 19px; 
+        line-height: 1.5; 
+    }
+    .click-me-button {
+        padding: 10px 20px;
+        background-color: hsl(0, 96%, 65%);
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 250px;
+        text-align: center;
+    }
+    .second-container{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        row-gap: 10px;
+    }
+    .photo-grid img{
+        width: 320px;
+    height: 260px;
+    object-fit: cover;
+    }
+    .photo img{
+        height: 530px;
+        width: 320px;
+        object-fit: cover;
+    }
+    .image-container{
+      width: 50%;
+    }
+    .img-container{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        column-gap: 25px;
+    }
+    .photo-grid{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        height: 80%;
+}
+    .photo{
+        height: 80%;
+
+    }
+    .card-container{
+        display: flex;
+        width: 50%;
+/* height: 800px; */
+    }
+    .card {
+    background-color: #ff7171;
+    height: 260px;
+    width:60%;
+    margin-right: revert;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    padding-left: 50px;
+    row-gap: 1px;
+}
+    .card-header{
+        font-size: 20px;
+        color: black;
+    }
+    .card-header-container p{
+        margin: 0px;
+        font-size: 60px;
+        color: black;
+        font-weight: bold;
+        letter-spacing: 5px;
+        justify-items: center;
+    }
+    .card-header-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2px;    
+    }
+    .click-icon{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        align-items: center;
+    }
+    .click-icon img{
+        width: 15px;
+        height: 15px;
+
+    }
+    .click-icon p{
+        font-size: 20px;
+
+    }
+    .normal-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+    <div class="menu">
+         
+                    <li><a href="home.html"><span style="font-family:Times New Roman; column-gap: 10px;font-size:20pt ">Home</span></a></li>
+                    <li><a href="order.html"><span style="font-family:Times New Roman; column-gap: 10px;font-size:20pt">Order</span></a></li>
+                    <li><a href="food.html"><span style="font-family:Times New Roman; column-gap: 10px;font-size:20pt">Food</span></a></li>
+                    <li><a href="restaurant.html"><span style="font-family:Times New Roman; column-gap: 10px;font-size:20pt">Restaurant</span></a></li>
+                    <li><a href="testimonials.html"><span style="font-family:Times New Roman;column-gap: 10px; font-size:20pt">Testimonials</span></a></li>
+                    <li><a href="C0ntact Us.html"><span style="font-family:Times New Roman;column-gap: 10px; font-size:20pt">Contact Us</span></a></li>
+                    <li><img src="./menu-bar.png" class="icon-img"></li>
+        
+    </div>
+    <div class="main-container">
+        <div class="container">
+            <div class="left-section">
+                <div class="left-container">
+            
+                    <p class ="heading" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">LOREM IPSUM </p>
+                    <p class="description" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus <br>
+                        id est vitae dolor rhoncus tristique. Maecenas metus quam,<br>
+                         rhoncus euismod lorem in, sollicitudin viverra eros. Donec<br>
+                          dictum luctus quam ut tristique. Curabitur nec faucibus purus.<br>
+                           Quisque congue sem nec justo mollis, in tincidunt erat pretium. <br>
+                           Sed pulvinar, massa ac porta viverra.</p>
+                           <button class="click-me-button" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Click Me</button>
+                        </div>
+                </div>
+                <div class="right-section">
+                    <img src = "./resources/images/pexels-robin-stickel-70497.jpg" alt="Image Description" height="720.000000pt">
+                </div>
+        </div>
+    
+        <div class="second-container">
+            <div class="image-container">
+                <div class="img-container">
+
+                    <div class="photo-grid">
+                        <img src = "./pexels-rachel-claire-6752433.jpg" alt="Image Description" height="720.000000pt">
+                        <img src = "./pexels-eva-bronzini-6141651.jpg" alt="Image Description" height="720.000000pt">    
+                    </div><div  class="photo">
+                        <img src = "./pexels-mister-mister-3434523.jpg" alt="Image Description" height="720.000000pt">
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <p class="card-header" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> LOREM IPSUM</p>
+                    <div class="card-header-container">
+                        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> LOREM IPSUM</p>
+                        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> SET ADEMIR</p>
+                    </div>
+                    <div class="click-icon">
+                        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Click</p>
+                        <img src = "./icons8-arrow-30.png" alt="Image Description" height="720.000000pt">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
